@@ -27,7 +27,7 @@ while True:
     ip=input("Enter logical Address : ") 
     s.send(ip.encode()) 
     print("MAC Address",s.recv(1024).decode())
-~~~
+
 ~~~
 client.py
 
@@ -61,8 +61,7 @@ while True:
     ip=input("Enter MAC Address : ") 
     s.send(ip.encode()) 
     print("Logical Address", s.recv(1024).decode())
-~~~
-~~~
+
 client.py
 
 import socket 
