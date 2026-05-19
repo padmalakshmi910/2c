@@ -17,7 +17,7 @@ stored.
 5. Map the IP address with its MAC address and return the MAC address to client.
 P
 ## PROGRAM - ARP
-~~
+~~~
 server.py
 
 import socket 
@@ -27,8 +27,8 @@ while True:
     ip=input("Enter logical Address : ") 
     s.send(ip.encode()) 
     print("MAC Address",s.recv(1024).decode())
-
-
+~~~
+~~~
 client.py
 
 import socket 
@@ -51,7 +51,7 @@ while True:
 ![alt text](<Screenshot 2026-05-19 114745.png>)
 
 ## PROGRAM - RARP
-~~
+~~~
 server.py
 
 import socket 
@@ -61,7 +61,8 @@ while True:
     ip=input("Enter MAC Address : ") 
     s.send(ip.encode()) 
     print("Logical Address", s.recv(1024).decode())
-
+~~~
+~~~
 client.py
 
 import socket 
@@ -77,7 +78,7 @@ while True:
     except KeyError: 
         c.send("Not Found".encode())
 
-~~
+~~~
 
 ## OUPUT -RARP
 
