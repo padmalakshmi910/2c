@@ -28,7 +28,7 @@ while True:
     s.send(ip.encode()) 
     print("MAC Address",s.recv(1024).decode())
 
-~~~
+
 client.py
 
 import socket 
@@ -44,7 +44,7 @@ while True:
      except KeyError: 
         c.send("Not Found".encode())
 
-~~
+~~~
 
 ## OUPUT - ARP
 
